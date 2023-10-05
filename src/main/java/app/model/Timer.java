@@ -9,6 +9,10 @@ import org.springframework.stereotype.Component;
 public class Timer {
 
     public static Timer timer = new Timer();
+
+    private Timer() {
+
+    }
     private Long nanoTime = System.nanoTime();
 
     public Long getTime() {
